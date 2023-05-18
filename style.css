@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(255, 208, 0);
+}
+.list-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  background-color: rgb(202, 155, 93);
+}
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  background-color: rgb(233, 189, 124);
+}
+.todo-app h2 {
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aqua;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding: 20px;
+  font-weight: 14px;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 20px 50px;
+  background-color: rgb(136, 231, 255);
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+ul li {
+  background-color: rgb(236, 238, 238);
+  list-style: none;
+  font-size: 20px;
+  margin: 10px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 40px;
+}
+ul li ::before{
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked{
+  color: black;
+  text-decoration: line-through;
+}
+
+ui li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li span:hover {
+  background: gray;
+}
